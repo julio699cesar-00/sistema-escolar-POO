@@ -1,0 +1,49 @@
+/* Tabelas (turmas e alunos) */
+#alunos table,
+#turmas table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* Cabeçalho */
+#alunos th,
+#turmas th {
+  background-color: #f1f3f5;
+  color: #333;
+  padding: 14px 12px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Células */
+#alunos td,
+#turmas td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #e5e5e5;
+  color: #333;
+}
+
+/* Efeito ao passar o mouse */
+#alunos tr:hover td,
+#turmas tr:hover td {
+  background-color: #f8f9fa;
+}
+
+/* Alinhamento das notas, média e situação (colunas 2 a 6) */
+#alunos th:nth-child(n+2):nth-child(-n+6),
+#alunos td:nth-child(n+2):nth-child(-n+6) {
+  text-align: center;
+}
+
+/* Cantos arredondados do cabeçalho */
+#alunos th:first-child,
+#turmas th:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+#alunos th:last-child,
+#turmas th:last-child {
+  border-radius: 0 8px 8px 0;
+}
